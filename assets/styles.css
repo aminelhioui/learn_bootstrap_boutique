@@ -1,0 +1,50 @@
+/* ================== Styles personnalisés ================== */
+
+/* Section héros avec image d'accroche */
+.hero {
+    background-image: url('https://cdn.pixabay.com/photo/2017/05/07/08/56/food-2291897_1280.jpg'); /* Image produit attrayante */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Texte héros lisible */
+.hero h1, .hero p {
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+/* Bouton héros */
+.hero .btn-warning {
+    font-weight: bold;
+    padding: 10px 25px;
+}
+
+/* Cards produits */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer hover */
+footer a:hover {
+    color: #ffc107;
+}
+
+/* ================== Media Queries pour mobiles ================== */
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
